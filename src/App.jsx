@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-
+import Test from './component/test'
+import Navbar from './component/Navbar'
 function App() {
   const [counter, setCounter] = useState(0)
   const addvalue=()=>{
@@ -19,7 +20,8 @@ function App() {
   }
   return (
     <>
-      <div className="container1">
+     <Navbar />
+      <div className="container2">
         <h1>ABHIAHEKH KUMAR SHAKY</h1>
         <p>Revision practices</p>
       </div>
@@ -28,7 +30,9 @@ function App() {
       <br />
       <br />
       <button onClick={subvalue}>Decrease count: {counter}</button>
+      <Test />
     </>
+
   )
 }
 
